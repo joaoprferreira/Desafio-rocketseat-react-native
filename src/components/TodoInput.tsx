@@ -8,7 +8,6 @@ interface TodoInputProps {
 
 export function TodoInput({ addTask }: TodoInputProps) {
   const [task, setTask] = useState('');
-
   function handleAddNewTask() {
     if (!task){return}
     addTask(task)
@@ -28,7 +27,6 @@ export function TodoInput({ addTask }: TodoInputProps) {
         onSubmitEditing={handleAddNewTask}
       />
       <TouchableOpacity
-        testID="add-new-task-button"
         activeOpacity={0.7}
         style={styles.addButton}
         onPress={handleAddNewTask}
