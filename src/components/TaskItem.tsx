@@ -30,9 +30,7 @@ export function TaskItem({
   const [isEditing, setEditing] = useState(false);
   const [taskNewTitleValue, setTaskNewTitleValue] = useState(task.title);
   const textInputRef = useRef<TextInput>(null);
-
-  console.log("Valor da task no TaskItem ::", task)
-
+  
   const handleStartEditing = () => {
     setEditing(true);
   };
